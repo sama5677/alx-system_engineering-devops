@@ -4,3 +4,7 @@ sudo apt update
 sudo apt install haproxy -y
 sudo sh -c 'echo "\nlisten myserver\n\tbind *:80\n\tbalance roundrobin\n\tserver server1 (your_ip_server1):80 check\n\tserver server2 (your_ip_server2) check\n" >> /etc/haproxy/haproxy.cfg'
 sudo service haproxy restart
+
+enter to your server (lb)
+sudo ./1-install_load_balancer
+doneðŸ¥‰
